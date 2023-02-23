@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+
+        <title>PW</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                background-color: aquamarine;
+            }
+            img {
+                float:right;
+            }
+            img:hover {
+                transform: rotate(20deg);
+            }
+        </style>
+
+        <script>
+
+            function mudaCor() {
+
+                let body = document.querySelector('body');
+
+                if (body.style.backgroundColor == 'aquamarine')
+                    body.style.backgroundColor = 'khaki';
+                else
+                    body.style.backgroundColor = 'aquamarine';
+            }
+
+        </script>
+
+    </head>
+
+
+    <body>
+        <h1>Programação Web</h1>
+        <img src="pw.png" alt="">
+        <p>Bemvindos à disciplina de Programação Web 😀</p>
+
+        <p>Lista de tecnologias</p>
+
+        <ul>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Django</li>
+        </ul>
+
+        Pesquise no Google aqui:
+        <form action="http://www.google.pt/search">
+            <input type="text" name="q">
+            <input type="submit">
+        </form>
+
+        <button onclick="mudaCor()">Mude a cor de fundo</button>
+
+    </body>
+</html>
